@@ -1,0 +1,136 @@
+/* Variables */
+:root {
+    --bg-color: #FBFBFE;
+    --secondary-bg-color:#EEBC1D;
+    --logo-color: #EEBC1D;
+
+    --nav-bg-color: #333;
+    --nav-link-color: #FBFBFE;
+    --nav-offset: 86px;
+
+    --table-header-bg-color: #f4f4f4;
+    --table-body-hover-bg-color:#f1f1f1;
+}
+
+/* General Resets */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* font family */
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Utility classes */
+
+
+/* ---- Home page ---- */
+
+/* body */
+body {
+    background-color: var(--bg-color);
+    margin-top: var(--nav-offset);
+}
+
+/* Logo */
+.title {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--logo-color);
+}
+
+/* Navigation bar */
+nav{
+    background-color: var(--nav-bg-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 86px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    padding: 1rem;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 0.8rem;
+}
+
+.nav-link {
+    color: var(--nav-link-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--nav-link-color);
+}
+
+.search-container {
+    background-color: var(--bg-color);
+    padding: 0 0 0 0.4rem;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+    text-align: center;
+}
+
+.search-box, .search-box:focus,.search-box:active {
+    outline: none;
+    border: none;
+}
+
+.search-box {
+    padding: 0.4rem;
+}
+
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+table {
+    width: 94%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, 
+td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+th {
+    background-color: var(--table-header-bg-color);
+}
+tr:hover {
+    background-color: var(--table-body-hover-bg-color);
+    cursor: pointer;
+}
