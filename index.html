@@ -10,18 +10,16 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome Stylesheet-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ:wght@100..400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -32,7 +30,7 @@
         </div>
         <div class="right-nav">
             <a href="index.html" class="nav-link">Home</a>
-            <a href="favourites.html" class="nav-link">Favourites</a>
+            <a href="./favourites/favourites.html" class="nav-link">Favourites</a>
             <div class="search-container">
                 <span class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -52,13 +50,21 @@
                     <th>Name</th>
                     <th>
                         Price
-                        <i id="sort-price-asc" class="fa-solid fa-arrow-up"></i>
-                        <i id="sort-price-dsc" class="fa-solid fa-arrow-down"></i>
+                        <span id="sort-price-asc">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </span>
+                        <span id="sort-price-desc">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </span>
                     </th>
                     <th>
                         Volume
-                        <i id="sort-price-asc" class="fa-solid fa-arrow-up"></i>
-                        <i id="sort-price-dsc" class="fa-solid fa-arrow-down"></i>
+                        <span id="sort-volume-asc">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </span>
+                        <span id="sort-volume-desc">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </span>
                     </th>
                     <th>Market Cap</th>
                     <th>Favourite</th>
@@ -69,22 +75,20 @@
             </tbody>
         </table>
 
-        <div class="pagination">
+        <div id="pagination-container" class="pagination-container">
 
         </div>
-        <div class="shimmer-container">
+        <div class="shimmer-container" id="shimmer-container">
             <div class="shimmer"></div>
         </div>
     </main>
 
     <!-- Scripts -->
     <script src="./JS/app.js" defer></script>
-    <script 
-        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
         integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer">
-    </script>
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
 </body>
 
 </html>
